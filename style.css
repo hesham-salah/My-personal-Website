@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+     font-family: "Poppins", sans-serif;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     scroll-behavior: smooth;
+}
+
+    
+
+   
+
+
+header{
+    margin: 0;
+    background-color: #4e9eff ;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+z-index: 999;
+display: flex;
+justify-content: space-between;
+align-items: baseline;
+padding: 10px 200px;
+position: fixed;
+
+}
+.logo{
+    color: #fff;
+     text-decoration: none;
+     font-weight: 700;
+     font-size: 1.8em;
+     text-transform: uppercase;
+     
+}
+.navigation a{
+    color: #fff;
+     text-decoration: none;
+     font-weight: 400;
+     font-size: 1.1em;
+     padding-left: 30px;
+     margin-bottom: 100px;
+
+}
+.navigation a:hover{
+  color: #601cfc;  
+}
+section {
+    margin-top: 100px;
+    padding: 100px 200px;
+}
+
+.Main {
+   
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    margin: 0;
+    
+
+    background-image: url("images/لقطة\ شاشة\ 2026-10-20\ 111834.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    z-index: -1;
+    
+
+}
+.intro{
+    margin-top: 200px;
+}
+.Main h2{
+    color:#fff;
+    font-size: 1.4em;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+
+.Main h2 span {
+     display: inline-block;
+    margin-top: 5px;
+    font-size: 2em;
+    font-weight: 600;
+    color: #4e9eff;
+}
+.Main h3{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    color:#fff; ;
+    font-size: 1.8em;
+    font-weight: 500;
+}
+.main-btn{
+    color: #f0f0f0;
+    background-color: #4e9eff;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    font-size: 1.1em;
+    font-weight: 600;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.7s ease;
+}
+.main-btn:hover{
+    background-color:#0a49f6 ;
+    transform: scale(1.1);
+}
+.main-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    z-index: -1;
+}
+
+.main-btn:hover::after {
+    height: 100%;
+    opacity: 0.5;
+}
+.social-icons a{
+     margin-top: 10px;
+    padding-right: 20px;
+    color:#4e9eff;;
+    font-size: 1.7em;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color: #4e9eff;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+width: 21.25em;
+background-color:#fff;
+box-shadow: 0 5px 25px rgba(1, 1, 1, 0.15);
+border-radius: 10px;
+padding: 25px;
+margin: 15px;
+transition: 0.7s ease;
+}
+.card:hover {
+    transform: scale(1.1);
+}
+.icon{
+    color:#4e9eff;
+    font-size: 8em;
+    text-align: center;
+
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    color:#4e9eff;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+.projects{
+    background-color: #000016;
+}
+.projects .content{
+    margin-top: 30px;
+}
+.project-card{
+    background-color: #fff;
+    overflow: hidden;
+    width: 23em;
+    min-height: 14em;
+    border:1px solid #fff;
+    border-radius: 10px;
+    transition: 0.7s ease;
+    margin: 20px;
+}
+.project-card :hover{
+    transform: scale(1.1);
+}
+.project-card :hover .project-image{
+    opacity: 0.9;
+}
+.project-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-category {
+    font-size: 0.8em;
+    color: #000016;
+    margin: 0 0 15px;
+    padding: 0;
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    font-weight: 800;
+    gap: 10px;
+}
+
+.more-details {
+    text-decoration: none;
+    color: #4e9eff;
+    white-space: nowrap;
+}
+
+.more-details:hover {
+    color: #601cfc;
+}
+.contact .icon{
+    font-size: 4.5em;
+}
+.contact .info h3{
+    color: #000016;
+
+}
+.contact .info p{
+    font-size: 1.1em;
+}
+.footer{
+    font-size: 10px;
+    background-color: #000016;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content:space-between ;
+
+}
+.footer-title{
+    font-size: 1.1em;
+    font-weight: 500;
+}
+.footer-title span{
+    color: #0a49f6;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+.footer .social-icons{
+    font-size: 1.3em;
+    padding-right: 10px;
+}
+@media (max-width: 1024px) {
+
+    header {
+        padding: 10px 35px;
+        align-items: center;
+    }
+
+    section {
+        padding: 90px 35px;
+        margin-top: 0;
+    }
+
+    .intro {
+        margin-top: 150px;
+    }
+
+    .Main h2 span {
+        font-size: 1.7em;
+    }
+
+    .Main h3 {
+        font-size: 1.5em;
+    }
+
+    .card {
+        width: min(100%, 340px);
+        margin: 12px;
+    }
+
+    .project-card {
+        width: min(100%, 368px);
+        margin: 12px;
+    }
+}
+
+
+/* =====================================
+   Mobile phones
+   ===================================== */
+
+@media (max-width: 768px) {
+
+    /* Header and navigation */
+
+    header {
+        width: 100%;
+        height: auto;
+        min-height: 85px;
+        padding: 10px 15px;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .logo {
+        font-size: 1.4em;
+    }
+
+    .navigation {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 16px;
+    }
+
+    .navigation a {
+        font-size: 0.9em;
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+
+
+    /* All sections */
+
+    section {
+        padding: 75px 16px;
+        margin-top: 0;
+        scroll-margin-top: 100px;
+    }
+
+
+    /* Main section */
+
+    .Main {
+        min-height: 100vh;
+        padding: 120px 18px 50px;
+
+        background-position: center;
+        background-attachment: scroll;
+    }
+
+    .Main .intro {
+        margin-top: 30px;
+        max-width: 100%;
+    }
+
+    .Main h2 {
+        font-size: 1.15em;
+        overflow-wrap: anywhere;
+    }
+
+    .Main h2 span {
+        font-size: 1.6em;
+    }
+
+    .Main h3 {
+        font-size: 1.2em;
+        letter-spacing: 0.5px;
+    }
+
+    .main-btn {
+        font-size: 0.95em;
+        padding: 0.8em 1.3em;
+    }
+
+    .social-icons a {
+        font-size: 1.4em;
+        padding-right: 12px;
+    }
+
+
+    /* Section titles */
+
+    .title {
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+
+    /* Services and contact cards */
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 370px;
+        margin: 10px 0;
+        padding: 20px;
+    }
+
+    .icon {
+        font-size: 5em;
+    }
+
+    .contact .icon {
+        font-size: 3.5em;
+    }
+
+    .info p {
+        overflow-wrap: anywhere;
+    }
+
+
+    /* Projects */
+
+    .project-card {
+        width: 100%;
+        max-width: 370px;
+        margin: 10px 0;
+    }
+
+    .project-image img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 10;
+        object-fit: cover;
+    }
+
+    .project-title {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .project-title span {
+        overflow-wrap: anywhere;
+    }
+
+
+    /* Footer */
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+        padding: 25px 15px;
+        font-size: 12px;
+    }
+
+    .footer .social-icons {
+        padding-right: 0;
+    }
+}
+
+
+/* =====================================
+   Very small phones
+   ===================================== */
+
+@media (max-width: 400px) {
+
+    header {
+        padding: 10px;
+    }
+
+    .navigation {
+        gap: 6px 12px;
+    }
+
+    .navigation a {
+        font-size: 0.82em;
+    }
+
+    section {
+        padding: 65px 12px;
+    }
+
+    .Main {
+        padding: 110px 14px 40px;
+    }
+
+    .Main h2 span {
+        font-size: 1.4em;
+    }
+
+    .title {
+        font-size: 1.6em;
+    }
+
+    .card {
+        padding: 16px;
+    }
+
+    .project-info {
+        padding: 15px;
+    }
+}
